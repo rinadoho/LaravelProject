@@ -17,7 +17,7 @@
 </tr>
 </table>
 
-
+    
     <input style="margin-left:38%; margin-right:50%;" id="sInput{{$persona->id}}{{ $attribute->id}}" class="sInput{{$persona->id}}{{$attribute->id}}" type="range" min="1" max="5">
 
     <div style="text-align:center;"><span id="ttext{{$persona->id}}{{$attribute->id}}" style="color:black;" class="ttext{{$persona->id}}{{ $attribute->id}}"></span></div>
@@ -27,7 +27,7 @@
     <script>
 
     var textt{{$persona->id}}{{$attribute->id}};
-    var sslider{{$persona->id}}{{$attribute->id}} = $('#sInput{{$persona->id}}{{$attribute->id}}');
+    var sslider{{$persona->id}}{{$attribute->id}} = document.getElementById('sInput{{$persona->id}}{{$attribute->id}}');
     var rresult{{$persona->id}}{{$attribute->id}} = document.getElementById("ttext{{$persona->id}}{{ $attribute->id}}");
 
     sInput{{$persona->id}}{{$attribute->id}}.oninput = function() {

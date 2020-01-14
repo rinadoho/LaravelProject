@@ -1,7 +1,8 @@
 <p>Technical knowledge</p>
 
+      <span>Little</span>
       <input id="myInput" type="range" min="1" max="5">
-
+      <span>A lot</span>
       <div class="modal-body" style="max-width:480px;"> <span id="demo"></span></div>
 
 
@@ -34,10 +35,11 @@
 
 <p>Area of expertise</p>
 
-<input id="myInput1" type="range" min="1" max="5">
+  <span>Little</span>
+  <input id="myInput1" type="range" min="1" max="5">
+  <span>A lot</span>
 
       <div  class="modal-body" style="max-width:480px;"> <span id="demo1"></span></div>
-
 
       <script>
         var text1;

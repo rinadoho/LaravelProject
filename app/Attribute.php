@@ -8,15 +8,15 @@ class Attribute extends Model
 {
     protected $guarded = [];
 
-    public function complete($completed = true)
-    {
-        $this->update(compact('completed'));
-    }
+    // public function complete($completed = true)
+    // {
+    //     $this->update(compact('completed'));
+    // }
 
-    public function incomplete()
-    {
-        $this->complete(false);
-    }
+    // public function incomplete()
+    // {
+    //     $this->complete(false);
+    // }
 
     public function persona() {
         return $this->belongsTo(Persona::class);

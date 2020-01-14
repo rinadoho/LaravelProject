@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Persona extends Model
 {
-    protected $guarded = [];
+    protected $guarded = [ ];
+    //protected $fillable = ['persona_name', 'age', 'role', 'description', 'owner_id'];
 
     public function attributes(){
         return $this->hasMany(Attribute::class);
@@ -15,9 +16,5 @@ class Persona extends Model
     public function addAttribute($attribute){
         
         $this->attributes()->create($attribute);
-        
-        // return Attribute::create([
-        //     'persona_id' => $this->id,
-        //     'description' => $description]);
     }
 }

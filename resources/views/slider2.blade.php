@@ -1,6 +1,8 @@
 <p>Technical knowledge</p>
 
+      <span>Little</span>
       <input id="myInput2{{$persona->id}}" type="range" min="1" max="5">
+      <span>A lot</span>
 
       <div  class="modal-body" style="max-width:480px;"> <span id="demo2{{$persona->id}}"></span></div>
 
@@ -33,7 +35,9 @@
       </script>
 
 <p>Area of expertise</p>
+<span>Little</span>
 <input id="myInput3{{$persona->id}}" type="range" min="1" max="5">
+<span>A lot</span>
 
       <div class="modal-body" style="max-width:480px;"><span id="demo3{{$persona->id}}"></span></div>
 

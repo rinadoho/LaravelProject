@@ -28,7 +28,6 @@ class PersonasController extends Controller
             'description'=> 'required',
             'age'=> 'required',
             'role'=> 'required',
-            'gender'=> 'required'
         ]);
         
 

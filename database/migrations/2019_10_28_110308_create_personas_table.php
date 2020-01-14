@@ -20,7 +20,7 @@ class CreatePersonasTable extends Migration
             $table->text('description');
             $table->integer('age');
             $table->string('role');
-            $table->string('gender');
+            $table->string('gender')->default('other');
             $table->timestamps();
 
             $table->foreign('owner_id')->references('id')->on('users')->onDelete('cascade');

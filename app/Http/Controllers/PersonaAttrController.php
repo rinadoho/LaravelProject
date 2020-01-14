@@ -8,22 +8,22 @@ use Illuminate\Http\Request;
 
 class PersonaAttrController extends Controller
 {
-    public function edit(Attribute $attribute){
+    // public function edit(Attribute $attribute){
 
-        return view('personas.edit', compact('persona'));
-    }
+    //     return view('personas.edit', compact('persona'));
+    // }
 
-    public function update(Attribute $attribute){
+    // public function update(Attribute $attribute){
 
-        // $attribute->update(['completed' => request()->has('completed')]);
-        //$attribute->complete(request()->has('completed'));
+    //     // $attribute->update(['completed' => request()->has('completed')]);
+    //     //$attribute->complete(request()->has('completed'));
 
-        $method = request()->has('completed') ? 'complete' : 'incomplete';
+    //     $method = request()->has('completed') ? 'complete' : 'incomplete';
 
-        $attribute->$method();
+    //     $attribute->$method();
 
-        return back();
-    }
+    //     return back();
+    // }
 
     public function destroy(Attribute $attribute){
         $attribute->delete();
